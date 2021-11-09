@@ -20,7 +20,7 @@
 }
 .button button{
     padding: 0.5rem;
-    background-color: white;
+    /* background-color: white; */
     border: none;
     transition: 0.2s;
     margin-bottom: 0.5rem;

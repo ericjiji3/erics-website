@@ -1,18 +1,16 @@
 .home{
     display: flex;
     flex-flow: column;
-    height: 100vh;
+    height: 100%;
     animation: shifting-color 15s infinite linear;
 }
-.home .letter.active{
-    background-color:blue;
-    height: fit-content;
-}
-.cards{
+.home .letterCards{
     display: none;
+    opacity: 0;
 }
-.cards.active{
-    display:block;
+.home .letterCards.active{
+    opacity: 1;
+    /* display: block; */
 }
 .name-container{
     height: 100%;

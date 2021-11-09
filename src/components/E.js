@@ -6,7 +6,7 @@ import $ from 'jquery';
 function Home(){
 
     return(
-        <div className="cards">
+        <div className="cards row justify-content-center">
             <Card
                     title='Card Title'
                     imageURL=''
