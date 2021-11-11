@@ -13,37 +13,47 @@ function Home(){
     const [r,setR] = useState(false);
     const [i,setI] = useState(false);
     const [c,setC] = useState(false);
+    const eArray = ['X','T','R','A','T','E','R','R','E','S','T','R','I','A','L'];
 
     useEffect(()=>{
         console.log(e);
         if(e){
+                $('.E').addClass('active');
                 $('.EletterCards').addClass('active');
                 $('.EletterCards.active').slideDown(1000);
+                
         } else{
+                $('.E.active').removeClass('active');
                 $('.EletterCards.active').slideUp(1000, function(){
                     $('.EletterCards').removeClass('active');
                 });
         }
         if(r){
+            $('.R').addClass('active');
             $('.RletterCards').addClass('active');
             $('.RletterCards.active').slideDown(1000);
         } else{
+                $('.R.active').removeClass('active');
                 $('.RletterCards.active').slideUp(1000, function(){
                     $('.RletterCards').removeClass('active');
                 });
         }
         if(i){
+            $('.I').addClass('active');
             $('.IletterCards').addClass('active');
             $('.IletterCards.active').slideDown(1000);
         } else{
+            $('.I.active').removeClass('active');
                 $('.IletterCards.active').slideUp(1000, function(){
                     $('.IletterCards').removeClass('active');
                 });
         }
         if(c){
+            $('.C').addClass('active');
             $('.CletterCards').addClass('active');
             $('.CletterCards.active').slideDown(1000);
         } else{
+            $('.C.active').removeClass('active');
             $('.CletterCards.active').slideUp(1000, function(){
                 $('.CletterCards').removeClass('active');
             });
@@ -57,7 +67,7 @@ function Home(){
                 - setInterval equal to transition time
                 - add data-attribute to each letter for the word */}
 
-                <span className="E" onClick={() => setE(e => !e)}>{e ? 'Extraterrestrial' : 'E'}</span>
+                <p className="E" onClick={() => setE(e => !e)}>{e ? 'Extraterrestrial' : 'E'}</p>
                 <div className='EletterCards'>
                     <E/>
                 </div>
