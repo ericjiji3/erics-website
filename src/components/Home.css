@@ -2,43 +2,68 @@
     display: flex;
     flex-flow: column;
     height: 100%;
-    animation: shifting-color 15s infinite linear;
+    animation: shifting-color 8s infinite linear;
 }
-.home .letterCards{
+.home .EletterCards, .RletterCards, .IletterCards, .CletterCards{
     display: none;
     opacity: 0;
 }
-.home .letterCards.active{
+.home .EletterCards.active, .RletterCards.active, .IletterCards.active, .CletterCards.active{
     opacity: 1;
     /* display: block; */
+    
 }
+
+
 .name-container{
     height: 100%;
     font-family: 'Roboto', sans-serif;
     font-size: 3em;
     /*background-color: #d6834f;*/
     padding: 80px 0;
+    animation: shifting-text-color 8s infinite linear;
 
 }
 @keyframes shifting-color{
     0% {
-        background-color: #45a3e5;
+        background-color: #550403;
     }
 
     30% {
-        background-color: #66bf39;
+        background-color: #3b0404;
     }
 
     60% {
-        background-color: #eb670f;
+        background-color: #330909;
     }
 
     90% {
-        background-color: #f35;
+        background-color: #5a0f05;
     }
 
     100% {
-        background-color: #45a3e5;
+        background-color: #550403;
+    }
+}
+@keyframes shifting-text-color{
+    0% {
+        color: #2e2e2c;
+    }
+
+    30% {
+        color: #454442;
+    }
+
+    60% {
+        color: #73726e;
+    }
+
+    90% {
+        color: #5c5b58;
+    }
+
+    100% {
+        color: #2e2e2c;
     }
 }
 .name-container h1{

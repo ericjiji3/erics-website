@@ -2,12 +2,14 @@ import React, {useEffect, useState} from 'react';
 import './Home.css';
 import Card from './Card.js';
 import E from './E.js';
+import R from './R.js';
+import I from './I.js';
+import C from './C.js';
 import $ from 'jquery';
 import { CSSTransition, SwitchTransition } from "react-transition-group";
 
 function Home(){
     const [e,setE] = useState(false);
-    const [eText, setEText] = useState('E');
     const [r,setR] = useState(false);
     const [i,setI] = useState(false);
     const [c,setC] = useState(false);
@@ -15,20 +17,38 @@ function Home(){
     useEffect(()=>{
         console.log(e);
         if(e){
-                $('.letterCards').addClass('active');
-                let homeHeight = 100 + $('.cards.active').height();
-                // $('.home').css('height', '100%');
-                $('.letterCards.active').slideDown(1000);
-                // $('.letter.E').text('Extraterrestrial');
+                $('.EletterCards').addClass('active');
+                $('.EletterCards.active').slideDown(1000);
         } else{
-                // $('.home').css('height', '100vh');
-                $('.letterCards.active').slideUp(1000, function(){
-                    $('.letterCards').removeClass('active');
+                $('.EletterCards.active').slideUp(1000, function(){
+                    $('.EletterCards').removeClass('active');
                 });
-                // $('.letterCards').removeClass('active');
-                // $('.letter.E').text('E');
         }
-    })
+        if(r){
+            $('.RletterCards').addClass('active');
+            $('.RletterCards.active').slideDown(1000);
+        } else{
+                $('.RletterCards.active').slideUp(1000, function(){
+                    $('.RletterCards').removeClass('active');
+                });
+        }
+        if(i){
+            $('.IletterCards').addClass('active');
+            $('.IletterCards.active').slideDown(1000);
+        } else{
+                $('.IletterCards.active').slideUp(1000, function(){
+                    $('.IletterCards').removeClass('active');
+                });
+        }
+        if(c){
+            $('.CletterCards').addClass('active');
+            $('.CletterCards.active').slideDown(1000);
+        } else{
+            $('.CletterCards.active').slideUp(1000, function(){
+                $('.CletterCards').removeClass('active');
+            });
+        }
+        })
     return(
         <div className="home">
             <div className="name-container row justify-content-center">
@@ -37,13 +57,22 @@ function Home(){
                 - setInterval equal to transition time
                 - add data-attribute to each letter for the word */}
 
-                <span className="letter E" onClick={() => setE(e => !e)}>{e ? 'Extraterrestrial' : 'E'}</span>
-                <div className='letterCards'>
+                <span className="E" onClick={() => setE(e => !e)}>{e ? 'Extraterrestrial' : 'E'}</span>
+                <div className='EletterCards'>
                     <E/>
                 </div>
-                <span className="letter R" onClick={() => setR(!r)}>R</span>
-                <span className="letter I" onClick={() => setI(!i)}>I</span>
-                <span className="letter C" onClick={() => setC(!c)}>C</span>
+                <span className="R" onClick={() => setR(!r)}>{r ? 'Responsive' : 'R'}</span>
+                <div className='RletterCards'>
+                    <R/>
+                </div>
+                <span className="I" onClick={() => setI(!i)}>{i ? 'Imaginative' : 'I'}</span>
+                <div className='IletterCards'>
+                    <I/>
+                </div>
+                <span className="C" onClick={() => setC(!c)}>{c ? 'Cool' : 'C'}</span>
+                <div className='CletterCards'>
+                    <C/>
+                </div>
             </div>
         </div>
     )
