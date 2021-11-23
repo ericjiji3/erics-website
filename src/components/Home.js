@@ -20,10 +20,13 @@ function Home(){
         if(e){
                 $('.E').addClass('active');
                 $('.EletterCards').addClass('active');
-                $('.EletterCards.active').slideDown(1000);
+                $('.EletterCards').slideDown(1000, function(){
+                    // $('.home').css('height', '100%');
+                });
                 
         } else{
                 $('.E.active').removeClass('active');
+                // $('.home').css('height', '100vh');
                 $('.EletterCards.active').slideUp(1000, function(){
                     $('.EletterCards').removeClass('active');
                 });
@@ -31,9 +34,12 @@ function Home(){
         if(r){
             $('.R').addClass('active');
             $('.RletterCards').addClass('active');
-            $('.RletterCards.active').slideDown(1000);
+            $('.RletterCards.active').slideDown(1000, function(){
+                // $('.home').css('height', '100%');
+            });
         } else{
                 $('.R.active').removeClass('active');
+                // $('.home').css('height', '100vh');
                 $('.RletterCards.active').slideUp(1000, function(){
                     $('.RletterCards').removeClass('active');
                 });
@@ -41,9 +47,12 @@ function Home(){
         if(i){
             $('.I').addClass('active');
             $('.IletterCards').addClass('active');
-            $('.IletterCards.active').slideDown(1000);
+            $('.IletterCards.active').slideDown(1000, function(){
+                // $('.home').css('height', '100%');
+            });
         } else{
             $('.I.active').removeClass('active');
+            // $('.home').css('height', '100vh');
                 $('.IletterCards.active').slideUp(1000, function(){
                     $('.IletterCards').removeClass('active');
                 });
@@ -51,9 +60,12 @@ function Home(){
         if(c){
             $('.C').addClass('active');
             $('.CletterCards').addClass('active');
-            $('.CletterCards.active').slideDown(1000);
+            $('.CletterCards.active').slideDown(1000,function(){
+                // $('.home').css('height', '100%');
+            });
         } else{
             $('.C.active').removeClass('active');
+            // $('.home').css('height', '100vh');
             $('.CletterCards.active').slideUp(1000, function(){
                 $('.CletterCards').removeClass('active');
             });
@@ -67,7 +79,7 @@ function Home(){
                 - setInterval equal to transition time
                 - add data-attribute to each letter for the word */}
 
-                <p className="E" onClick={() => setE(e => !e)}>{e ? 'Extraterrestrial' : 'E'}</p>
+                <p className="E" onClick={() => setE(e => !e)}>Extraterrestrial</p>
                 <div className='EletterCards'>
                     <E/>
                 </div>

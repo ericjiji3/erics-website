@@ -4,9 +4,9 @@ import './Card.css'
 function Card({title, imageURL, body}){
     return(
         <div className='card-container'>
-            <div className='image-container'>
+            {/* <div className='image-container'>
                 <img src={imageURL} alt=''/>
-            </div>
+            </div> */}
             <div className='content'>
                 <div className='title-container'>
                     <h3>{title}</h3>
