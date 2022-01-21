@@ -1,15 +1,33 @@
 
 .title{
-    color:aliceblue;
+    color: white;
+  mix-blend-mode: difference;
+  font-size: 35px;
 }
 .text{
-    color:aliceblue;
+    color: white;
+  mix-blend-mode: difference;
+  padding: 0 200px;
+  font-size: 20px;
 }
+.globe{
+    animation: 4s App-logo-spin linear infinite;
+}
+
+@keyframes App-logo-spin {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+  }
 @media(max-width: 850px){
     .title{
-        font-size: 25px;
+        font-size: 20px;
     }
     .text{
-        font-size: 15px;
+        font-size: 10px;
+        padding: 0 20px ;
     }
 }

@@ -10,8 +10,10 @@
 .home .E, .R, .I, .C{
   white-space: nowrap;
   overflow: hidden;
-  margin: 70px 0 30px 0;
-  
+  margin: 85px 0 0px 0;
+  color: white;
+  mix-blend-mode: difference;
+  font-size: 60px;
 }
 /* .home .E.active, .R.active, .I.active, .C.active{
     animation: type 4s steps(60, end);
@@ -133,8 +135,11 @@
     }
     
     .home .E, .R, .I, .C{
-        margin-top: 85px;
-        font-size: 31px;
+        margin-top: 95px;
+        font-size: 32px;
       }
+    .home .C{
+        margin-bottom: 95px;
+    }
 
 }

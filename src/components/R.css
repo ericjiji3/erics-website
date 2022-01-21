@@ -1,14 +1,123 @@
 .title{
     color:aliceblue;
+    
+  mix-blend-mode: difference;
 }
 .text{
+    
     color:aliceblue;
+    
+  mix-blend-mode: difference;
 }
+.mail{
+    animation: 4s spin linear infinite;
+}
+
+.form .form-label{
+    color: white;
+    mix-blend-mode: difference;
+    margin-right: 25px;
+    font-size: 25px;
+}
+.form .message-label{
+    margin-top: 30px;
+    color: white;
+    mix-blend-mode: difference;
+    font-size: 25px;
+}
+.form .form-message-input{
+    /* color: white; */
+    -webkit-text-stroke: .5px black;
+    mix-blend-mode: difference;
+    background-color: white;
+    animation:bg-change 10s infinite;
+    font-size: 25px;
+    width: 800px;
+    height: 300px;
+    padding: 20px;
+}
+.form .form-input{
+    border: 0;
+    font-size: 25px;
+    width: 700px;
+  outline: 0;
+  background: transparent;
+  border-bottom: 1px solid white;
+  color: white;
+  mix-blend-mode: difference;
+    
+    margin-bottom: 20px;
+}
+.form .button{
+    background-color: white;
+    mix-blend-mode: difference;
+    border-radius: 50%;
+    height: 75px;
+  width: 75px;
+    border-color: white;
+    box-shadow: 0 0px 20px 0px white;
+    font-size: 20px;
+}
+@keyframes bg-change {
+	0%, 100% {
+		filter:hue-rotate(0deg);
+	}
+	50% {
+		filter:hue-rotate(-45deg);
+	}
+}
+@keyframes spin{
+    from{
+      transform: rotateY(0deg);
+    }
+    to{
+      transform: rotateY(360deg);
+    }
+  }
 @media(max-width: 850px){
     .title{
-        font-size: 25px;
+        font-size: 20px;
     }
     .text{
-        font-size: 15px;
+        font-size: 10px;
+        padding: 0 20px ;
+    }
+    .form .form-label{
+        margin-right: 5px;
+        font-size: 20px;
+    }
+    .form .message-label{
+        margin-top: 30px;
+        color: white;
+        mix-blend-mode: difference;
+        font-size: 20px;
+    }
+    .form .form-message-input{
+        width: 300px;
+        height: 200px;
+        padding: 20px;
+        font-size: 20px;
+    }
+    .form .form-input{
+        border: 0;
+        font-size: 20px;
+        width: 225px;
+      outline: 0;
+      background: transparent;
+      border-bottom: 1px solid white;
+      color: white;
+      mix-blend-mode: difference;
+        
+        margin-bottom: 20px;
+    }
+    .form .button{
+        background-color: white;
+        mix-blend-mode: difference;
+        border-radius: 50%;
+        height: 70px;
+      width: 70px;
+        border-color: white;
+        box-shadow: 0 0px 20px 0px white;
+        font-size: 20px;
     }
 }

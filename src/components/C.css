@@ -1,8 +1,10 @@
 .title{
-    color:aliceblue;
+    color: white;
+  mix-blend-mode: difference;
 }
 .text{
-    color:aliceblue;
+    color: white;
+  mix-blend-mode: difference;
 }
 @media(max-width: 850px){
     .title{
