@@ -2,13 +2,16 @@
   text-align: center;
   
 }
-
+html, body, .App, .App>div {
+  height: 100%;
+}
 .App-logo {
   height: 40vmin;
   pointer-events: none;
 }
 body{
   margin: 0;
+  
 }
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {

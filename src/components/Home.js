@@ -41,7 +41,7 @@ function Home(){
                     //append it to the welcome message
                     newEL.appendTo($all_msg);
                     //set the delay on the animation for this element
-                    newEL.delay(idx * 70);
+                    newEL.delay(idx * 20);
                     //animate the opacity back to full 1
                     newEL.animate({
                     opacity: 1
@@ -79,7 +79,7 @@ function Home(){
                     opacity: 0
                     });
                     newR.appendTo($r_message);
-                    newR.delay(idx * 70);
+                    newR.delay(idx * 20);
                     newR.animate({
                     opacity: 1
                     }, 1100);
@@ -116,7 +116,7 @@ function Home(){
                     opacity: 0
                     });
                     newI.appendTo($i_message);
-                    newI.delay(idx * 70);
+                    newI.delay(idx * 20);
                     newI.animate({
                     opacity: 1
                     }, 1100);
@@ -153,7 +153,7 @@ function Home(){
                     opacity: 0
                     });
                     newC.appendTo($c_message);
-                    newC.delay(idx * 70);
+                    newC.delay(idx * 10);
                     newC.animate({
                     opacity: 1
                     }, 1100);
@@ -184,7 +184,7 @@ function Home(){
     }
     return(
         <div className="home">
-            <div className="name-container row justify-content-center">
+            <div className="name-container row justify-content-center text-center mx-auto">
                 {/*<h1>I am</h1>*/}
                 {/* - create loop for text being added
                 - setInterval equal to transition time

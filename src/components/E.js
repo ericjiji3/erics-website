@@ -6,26 +6,33 @@ import $ from 'jquery';
 function Home(){
 
     return(
-        <div className="cards row justify-content-center">
-            <Card
+        <div>
+            <div className="row">
+                <span className="title">My work is out of this world!</span>
+                <h2 className="text">I am a software developer who specializes in making websites for my passionate clients! You can check out some of my work below.</h2>
+            </div>
+            <div className="cards row justify-content-center">
+        
+                <Card
+                        title='Card Title'
+                        imageURL=''
+                        body=''
+                    />
+                    <Card
+                        title='Card Title'
+                        imageURL=''
+                        body=''
+                    /><Card
                     title='Card Title'
                     imageURL=''
                     body=''
                 />
-                <Card
-                    title='Card Title'
-                    imageURL=''
-                    body=''
-                /><Card
-                title='Card Title'
-                imageURL=''
-                body=''
-            />
-                <Card
-                    title='Card Title'
-                    imageURL=''
-                    body=''
-                />
+                    <Card
+                        title='Card Title'
+                        imageURL=''
+                        body=''
+                    />
+            </div>
         </div>
 
     )

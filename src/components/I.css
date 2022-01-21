@@ -1,0 +1,14 @@
+.title{
+    color:aliceblue;
+}
+.text{
+    color:aliceblue;
+}
+@media(max-width: 850px){
+    .title{
+        font-size: 25px;
+    }
+    .text{
+        font-size: 15px;
+    }
+}
