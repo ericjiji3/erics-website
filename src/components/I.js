@@ -16,26 +16,31 @@ function Home(){
                 
                 <h2 className="text">I am constantly exploring new innovations in technology and software development. Check out some of my small creative projects!</h2>
             </div>
-        <div className="cards row justify-content-center">
+        <div className="cards justify-content-center">
+            <a className="link" href="https://github.com/ericjiji3" target="_blank">
             <Card
-                    title='Card Title'
+                    title='GitHub'
                     imageURL=''
                     body=''
+                    className="github"
                 />
+                </a>
+                <a className="link" href="https://gitlab.com/ej6638" target="_blank">
                 <Card
-                    title='Card Title'
+                    title='GitLab'
                     imageURL=''
                     body=''
-                /><Card
-                title='Card Title'
-                imageURL=''
-                body=''
-            />
-                <Card
-                    title='Card Title'
-                    imageURL=''
-                    body=''
+                    className="gitlab"
                 />
+                </a>
+                <a className="link" href="https://ej6638.itch.io/" target="_blank">
+                <Card
+                    title='itch IO'
+                    imageURL=''
+                    body=''
+                    className="itch"
+                />
+                </a>
         </div>
         </div>
     )

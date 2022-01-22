@@ -16,6 +16,24 @@ font-size: 20px;
 .lightbulb2{
   animation: 2s tilt-reverse linear infinite
 }
+.github{
+  background-image: url("./pics/card-images/github.png");
+  background-size: cover;
+  background-position: center;
+
+}
+.gitlab{
+  background-image: url("./pics/card-images/gitlab.png");
+  background-size: cover;
+  background-position: center;
+
+}
+.itch{
+  background-image: url("./pics/card-images/itch.png");
+  background-size: cover;
+  background-position: center;
+
+}
 @keyframes tilt{
   0%{
     transform: rotate(0deg);
@@ -50,7 +68,7 @@ font-size: 20px;
     transform: rotate(0deg);
   }
 }
-@media(max-width: 2000px){
+@media(max-width: 1500px){
   .title{
     font-size: 25px;
     line-height: 70px;
@@ -62,9 +80,12 @@ font-size: 20px;
 }
 @media(max-width: 850px){
     .title{
-        font-size: 25px;
+      display: inline-flex;
+      font-size: 22.5px;
+      line-height: 20px;
+      align-items: center;
     }
     .text{
-      font-size: 20px;
+      font-size: 12.5px;
     }
 }

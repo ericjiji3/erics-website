@@ -9,8 +9,11 @@
     
   mix-blend-mode: difference;
 }
-.mail{
-    animation: 4s spin linear infinite;
+.mail1{
+    animation: 2s shaky linear infinite;
+}
+.mail2{
+  animation: 2s shaky-reverse linear infinite;
 }
 
 .form .form-label{
@@ -49,32 +52,79 @@
     margin-bottom: 20px;
 }
 .form .button{
-    background-color: white;
+    /* background-color: #23c923; */
     mix-blend-mode: difference;
     border-radius: 50%;
-    height: 75px;
-  width: 75px;
+    height: 95px;
+  width: 95px;
+    
     border-color: white;
     box-shadow: 0 0px 20px 0px white;
     font-size: 20px;
+    transition: background-color 1s ease-in-out, mix-blend-mode 1s ease-in-out, bos-shadow 1s ease-in-out, width 1s ease-in-out, height 1s ease-in-out, transform .25s ease-in-out
 }
-@keyframes bg-change {
-	0%, 100% {
-		filter:hue-rotate(0deg);
-	}
-	50% {
-		filter:hue-rotate(-45deg);
-	}
+.form .button:hover{
+  transform: scale(1.05);
 }
-@keyframes spin{
-    from{
-      transform: rotateY(0deg);
+.form .button.correct{
+  background-color: #5ecb5e;
+  border-color: #3bca3b;
+  color: #ffffff;
+  font-size: 20px;
+  height: 60px;
+  width: 60px;
+  padding: 0 20px;
+  mix-blend-mode:initial;
+  box-shadow: 0 0px 20px 0px #22b122;
+}
+.form .button.incorrect{
+  background-color: #ad0000;
+  border-color: #8d1d1d;
+  height: 60px;
+  width: 60px;
+  color: #ffffff;
+  font-size: 20px;
+  padding: 0 20px;
+  mix-blend-mode:initial;
+  box-shadow: 0 0px 20px 0px #660000;
+}
+
+@keyframes shaky{
+  0%{
+    transform:translateX(0%);
+  } 
+  25%{
+    transform:translateX(12.5%);
+  }
+  50%{
+    transform:translateX(0%);
+  }
+  75%{
+    transform:translateX(-12.5%);
+  }
+  100%{
+    transform:translateX(0%);
+  }
+
+  }
+  @keyframes shaky-reverse{
+    0%{
+      transform:translateX(0%);
+    } 
+    25%{
+      transform:translateX(-12.5%);
     }
-    to{
-      transform: rotateY(360deg);
+    50%{
+      transform:translateX(0%);
+    }
+    75%{
+      transform:translateX(12.5%);
+    }
+    100%{
+      transform:translateX(0%);
     }
   }
-  @media(max-width: 2000px){
+  @media(max-width: 1500px){
     .title{
       font-size: 25px;
       line-height: 70px;
@@ -86,10 +136,13 @@
   }
 @media(max-width: 850px){
     .title{
-        font-size: 20px;
+      display: inline-flex;
+      font-size: 22.5px;
+      line-height: 20px;
+      align-items: center;
     }
     .text{
-        font-size: 10px;
+        font-size: 12.5px;
         padding: 0 20px ;
     }
     .form .form-label{
@@ -128,6 +181,6 @@
       width: 70px;
         border-color: white;
         box-shadow: 0 0px 20px 0px white;
-        font-size: 20px;
+        font-size: 15px;
     }
 }

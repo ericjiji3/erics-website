@@ -12,6 +12,38 @@
 .sunglasses2{
   animation: 2s up-down-reverse linear infinite;
 }
+.twitter, .instagram, .linkedin, .spotify, .twitch{
+  transition: 1s all;
+  color: rgb(207, 143, 143);
+  mix-blend-mode: difference;
+}
+.twitter:hover, .instagram:hover, .linkedin:hover, .spotify:hover, .twitch:hover{
+  transform: scale(1.05);
+  color: rgb(207, 143, 143);
+  mix-blend-mode: difference;
+  animation: 1s big-small linear infinite;
+}
+.twitter svg, .instagram svg, .linkedin svg, .spotify svg, .twitch svg{
+  
+  width: 75px!important;
+}
+@keyframes big-small{
+  0%{
+    transform: scale(1.05);
+  } 
+  25%{
+    transform: scale(1.1);
+  }
+  50%{
+    transform: scale(1.15);
+  }
+  75%{
+    transform: scale(1.1);
+  }
+  100%{
+    transform: scale(1.05);
+  }
+}
 @keyframes up-down {
   0%{
     transform:translateY(0%);
@@ -46,7 +78,7 @@
     transform:translateY(0%);
   }
 }
-@media(max-width: 2000px){
+@media(max-width: 1500px){
   .title{
     font-size: 25px;
     line-height: 70px;
@@ -58,10 +90,21 @@
 }
 @media(max-width: 850px){
     .title{
-        font-size: 20px;
+      display: inline-flex;
+      font-size: 22.5px;
+      line-height: 20px;
+      align-items: center;
     }
     .text{
-      font-size: 20px;
+      font-size: 12.5px;
         padding: 0;
+    }
+    .twitter, .instagram, .linkedin, .spotify, .twitch{
+      flex: 0 0 auto;
+      width: 20%;
+    }
+    .twitter svg, .instagram svg, .linkedin svg, .spotify svg, .twitch svg{
+  
+      width: 40px!important;
     }
 }

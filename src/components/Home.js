@@ -47,6 +47,7 @@ function Home(){
                     opacity: 1
                     }, 750);
                 });
+                $('.E').addClass('active');
                 $('.EletterCards').addClass('active');
                 $('.EletterCards.active').slideDown(750, function(){
                     // $('.home').css('height', '100%');

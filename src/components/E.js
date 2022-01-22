@@ -17,12 +17,12 @@ function Home(){
         <div>
             <div className="row">
                 <div className="d-flex justify-content-center">
-                    <span className="globe">🌎</span>
+                    <span className="globe">&#127758;</span>
                     <span className="title">My work is out of this world!</span>
-                    <span className="globe">🌎</span>
+                    <span className="globe">&#127758;</span>
                 </div>
         
-                <h2 className="text">I am a software developer who specializes in making websites for my passionate clients! You can check out some of my work below.</h2>
+                <h2 className="text">I am a software developer who loves creating web applications for myself and my passionate clients! You can check out some of my projects below.</h2>
             </div>
             <div className="cards justify-content-center">
             <Tooltip content="progress html-90 css-90 javascript-75 react-50 https://www.jordon-inrwav.com/" direction="bottom">
