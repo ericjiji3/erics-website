@@ -47,3 +47,16 @@
     font-weight: bold;
 
 }
+@media(max-width: 2000px){
+    .card-container{
+        width: 150px;
+        height: 125px;
+    }
+    .title-container h3{
+        font-size: 15px;
+        margin-bottom: 0;
+    }
+    .title-container p{
+        font-size: 10px;
+    }
+}

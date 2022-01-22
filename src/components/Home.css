@@ -126,6 +126,13 @@
         width: 0em;
     }
 }
+@media(max-width: 2000px){
+    .home .E, .R, .I, .C{
+        margin-top: 50px;
+        margin-bottom: 20px;
+        font-size: 30px;
+      }
+}
 @media(max-width: 850px){
     .name-container{
         /* height: 100%; */
@@ -138,7 +145,7 @@
     }
     
     .home .E, .R, .I, .C{
-        margin-top: 95px;
+        margin-top: 50px;
         margin-bottom: 20px;
         font-size: 32px;
       }

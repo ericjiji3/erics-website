@@ -110,10 +110,26 @@
     width: 48%;
       margin: 0 10px;
   }
-  @media(max-width: 850px) {
-    .Tooltip-Wrapper:hover, .Tooltip-Wrapper:active{
-      
+  @media(max-width: 2000px){
+    .Tooltip-Tip {
+      width: 125%;
     }
+    .logo-description{
+      font-weight: 500;
+      font-size: 10px;
+  }
+  .progress-item{
+      padding: 5px 0;
+  }
+  .progress-item .logo{
+    width: 35%;
+  }
+  .bar-length{
+    width: 40%;
+      margin: 0 10px;
+  }
+  }
+  @media(max-width: 850px) {
     .Tooltip-Tip {
       width: 135%;
     }

@@ -50,6 +50,16 @@ font-size: 20px;
     transform: rotate(0deg);
   }
 }
+@media(max-width: 2000px){
+  .title{
+    font-size: 25px;
+    line-height: 70px;
+}
+.text{
+    font-size: 15px;
+    padding: 0 20px ;
+}
+}
 @media(max-width: 850px){
     .title{
         font-size: 25px;
