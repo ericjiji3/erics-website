@@ -44,14 +44,14 @@ function Home(){
             .then((result) => {
                 console.log(result.text);
                 e.target.reset();
-                $('.form .button').val("✔");
+                $('.form .button').html("✔");
                 $('.form .button').addClass('correct');
             }, (error) => {
                 console.log(error.text);
                 e.target.reset();
             });
         } else{
-            $('.form .button').val("✖");
+            $('.form .button').html("✖");
             $('.form .button').addClass('incorrect');
             e.target.reset();
             alert("Oops, looks like something went wrong! Refresh the page and make sure all the fields have the correct information.");
@@ -89,7 +89,7 @@ function Home(){
                     <textarea className="form-message-input"   name="message" />
                 </div>
             
-                <input className="button" type="submit" value="Submit" />
+                <button className="button" type="submit" value="Submit">Submit</button>
             </form>
         </div>
 
