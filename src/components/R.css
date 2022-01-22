@@ -191,7 +191,7 @@
       font-size: 20px;
       height: 60px;
       width: 60px;
-      padding: 0 20px;
+      padding: 0 10px;
       mix-blend-mode:initial;
       box-shadow: 0 0px 20px 0px #22b122;
     }
@@ -199,7 +199,7 @@
       height: 60px;
     width: 60px;
       color: #ffffff;
-      font-size: 15px;
+      font-size: 10px;
 
     }
 }
