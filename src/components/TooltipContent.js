@@ -5,7 +5,7 @@ import html from "./pics/logos/html.png";
 function TooltipContent(props){
     let ref;
     let skills = props.content.split(' ');
-    if(skills.at(-1).substr(0,5) == "https"){
+    if(skills[skills.length - 1].substr(0,5) == "https"){
       ref = skills.pop();
     }
     skills.shift();
