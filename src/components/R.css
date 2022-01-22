@@ -174,9 +174,9 @@
         margin-bottom: 20px;
     }
     .form .button{
-        color: white;
+        color: black;
         background-color: white;
-        mix-blend-mode: difference;
+        /* mix-blend-mode: difference; */
         border-radius: 50%;
         height: 70px;
         width: 70px;
