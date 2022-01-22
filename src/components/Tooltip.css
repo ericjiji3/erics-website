@@ -17,7 +17,6 @@
   .Tooltip-Tip {
     position: absolute;
     border-radius: 4px;
-    opacity: 0%;
     width: 150%;
     left: 50%;
     transform: translateX(-50%);
@@ -72,8 +71,6 @@
   
   /* Absolute positioning */
   .Tooltip-Tip.bottom {
-    opacity: 100%;
-    transition: opacity 2s;
     /* bottom: calc(var(--tooltip-margin) * -1); */
   }
   /* CSS border triangles */
