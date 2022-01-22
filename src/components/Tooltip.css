@@ -111,6 +111,9 @@
       margin: 0 10px;
   }
   @media(max-width: 850px) {
+    .Tooltip-Wrapper:hover, .Tooltip-Wrapper:active{
+      
+    }
     .Tooltip-Tip {
       width: 135%;
     }

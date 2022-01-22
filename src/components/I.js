@@ -10,7 +10,7 @@ function Home(){
         <div className="row mb-4">
                 <div className="d-flex justify-content-center">
                     <span className="lightbulb1">💡</span>
-                    <span className="title">The best way to have a good idea is to have lots of ideas.</span>
+                    <span className="title">The best way to have a good idea is to have lots of ideas</span>
                     <span className="lightbulb2">💡</span>
                 </div>
                 

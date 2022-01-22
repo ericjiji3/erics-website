@@ -6,22 +6,27 @@ const Tooltip = (props) => {
   const [active, setActive] = useState(false);
 
   const showTip = () => {
-    timeout = setTimeout(() => {
       setActive(true);
-    }, props.delay || 0);
   };
 
   const hideTip = () => {
-    clearInterval(timeout);
     setActive(false);
   };
 
+  const toggleTip = () => {
+    if(!active){
+      setActive(true);
+    }else{
+      setActive(false);
+    }
+  }
   return (
     <div
       className="Tooltip-Wrapper"
       // When to show the tooltip
-      onMouseEnter={showTip}
-      onMouseLeave={hideTip}
+      onMouseEnter={window.innerWidth < 850 ? ()=> {return false} : showTip}
+      onMouseLeave={window.innerWidth < 850 ? ()=> {return false} : hideTip}
+      onClick={window.innerWidth < 850 ? toggleTip : ()=> {return false}}
     >
       {/* Wrapping */}
       {props.children}
