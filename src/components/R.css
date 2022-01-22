@@ -175,13 +175,14 @@
     }
     .form .button{
         /* color: white; */
+        background-color: white;
         mix-blend-mode: difference;
         border-radius: 50%;
         height: 70px;
         width: 70px;
         border-color: white;
         box-shadow: 0 0px 20px 0px white;
-        font-size: 15px;
+        font-size: 10px;
     }
     .form .button.correct{
       background-color: #5ecb5e;
