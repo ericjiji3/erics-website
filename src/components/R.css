@@ -174,7 +174,7 @@
         margin-bottom: 20px;
     }
     .form .button{
-        /* color: white; */
+        color: white;
         background-color: white;
         mix-blend-mode: difference;
         border-radius: 50%;
