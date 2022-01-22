@@ -174,13 +174,31 @@
         margin-bottom: 20px;
     }
     .form .button{
-        background-color: white;
+        color: black;
         mix-blend-mode: difference;
         border-radius: 50%;
         height: 70px;
-      width: 70px;
+        width: 70px;
         border-color: white;
         box-shadow: 0 0px 20px 0px white;
         font-size: 15px;
+    }
+    .form .button.correct{
+      background-color: #5ecb5e;
+      border-color: #3bca3b;
+      color: #ffffff;
+      font-size: 20px;
+      height: 60px;
+      width: 60px;
+      padding: 0 20px;
+      mix-blend-mode:initial;
+      box-shadow: 0 0px 20px 0px #22b122;
+    }
+    .form .button.incorrect{
+      height: 50px;
+      width: 50px;
+      color: #ffffff;
+      font-size: 15px;
+
     }
 }
