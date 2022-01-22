@@ -6,11 +6,52 @@
     color: white;
   mix-blend-mode: difference;
 }
+.sunglasses1{
+  animation: 2s up-down linear infinite;
+}
+.sunglasses2{
+  animation: 2s up-down-reverse linear infinite;
+}
+@keyframes up-down {
+  0%{
+    transform:translateY(0%);
+  } 
+  25%{
+    transform:translateY(10%);
+  }
+  50%{
+    transform:translateY(0%);
+  }
+  75%{
+    transform:translateY(-10%);
+  }
+  100%{
+    transform:translateY(0%);
+  }
+}
+@keyframes up-down-reverse {
+  0%{
+    transform:translateY(0%);
+  } 
+  25%{
+    transform:translateY(-10%);
+  }
+  50%{
+    transform:translateY(0%);
+  }
+  75%{
+    transform:translateY(10%);
+  }
+  100%{
+    transform:translateY(0%);
+  }
+}
 @media(max-width: 850px){
     .title{
-        font-size: 25px;
+        font-size: 20px;
     }
     .text{
-        font-size: 15px;
+      font-size: 20px;
+        padding: 0;
     }
 }

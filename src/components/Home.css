@@ -15,6 +15,9 @@
   mix-blend-mode: difference;
   font-size: 60px;
 }
+.home .E, .R, .I, .C:hover{
+    cursor: pointer;
+  }
 /* .home .E.active, .R.active, .I.active, .C.active{
     animation: type 4s steps(60, end);
     
@@ -136,10 +139,12 @@
     
     .home .E, .R, .I, .C{
         margin-top: 95px;
+        margin-bottom: 20px;
         font-size: 32px;
       }
-    .home .C{
-        margin-bottom: 95px;
-    }
+    /* .home .E{
+        margin-top: 120px;
+    } */
+    
 
 }

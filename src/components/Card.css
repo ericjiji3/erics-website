@@ -1,6 +1,6 @@
 .card-container{
     margin: 25px;
-    width: 225px;
+    width: 200px;
     height: 175px;
     overflow: hidden;
     box-shadow: 0px 0px 15px -5px;
@@ -12,9 +12,23 @@
 .card-container:hover{
     transform: scale(1.05);
     box-shadow: 0px 0px 15px 0px;
+    cursor: pointer;
 }
 .card-container .content{
     padding: 10px;
+}
+.title-container{
+    margin-top: 10px;
+    color: white;
+    font-weight:900;
+    text-shadow: 0px 0px 3px #000;
+}
+.title-container h3{
+    font-size: 20px;
+    margin-bottom: 0;
+}
+.title-container p{
+    font-size: 15px;
 }
 .image-container{
     overflow: hidden;

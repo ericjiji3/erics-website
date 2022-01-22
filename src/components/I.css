@@ -1,17 +1,60 @@
 .title{
-    color: white;
-  mix-blend-mode: difference;
+  color: white;
+mix-blend-mode: difference;
+font-size: 35px;
+padding: 0 10px;
 }
 .text{
-    color: white;
-  mix-blend-mode: difference;
-
+  color: white;
+mix-blend-mode: difference;
+padding: 0 200px;
+font-size: 20px;
+}
+.lightbulb1{
+  animation: 2s tilt linear infinite
+}
+.lightbulb2{
+  animation: 2s tilt-reverse linear infinite
+}
+@keyframes tilt{
+  0%{
+    transform: rotate(0deg);
+  }
+  25%{
+    transform: rotate(-30deg);
+  }
+  50%{
+    transform: rotate(0deg);
+  }
+  75%{
+    transform: rotate(30deg);
+  }
+  100%{
+    transform: rotate(0deg);
+  }
+}
+@keyframes tilt-reverse{
+  0%{
+    transform: rotate(0deg);
+  }
+  25%{
+    transform: rotate(30deg);
+  }
+  50%{
+    transform: rotate(0deg);
+  }
+  75%{
+    transform: rotate(-30deg);
+  }
+  100%{
+    transform: rotate(0deg);
+  }
 }
 @media(max-width: 850px){
     .title{
         font-size: 25px;
     }
     .text{
-        font-size: 15px;
+      font-size: 20px;
     }
 }

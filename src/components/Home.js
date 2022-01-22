@@ -41,14 +41,14 @@ function Home(){
                     //append it to the welcome message
                     newEL.appendTo($all_msg);
                     //set the delay on the animation for this element
-                    newEL.delay(idx * 20);
+                    newEL.delay(idx * 10);
                     //animate the opacity back to full 1
                     newEL.animate({
                     opacity: 1
-                    }, 1100);
+                    }, 750);
                 });
                 $('.EletterCards').addClass('active');
-                $('.EletterCards.active').slideDown(1000, function(){
+                $('.EletterCards.active').slideDown(750, function(){
                     // $('.home').css('height', '100%');
                 });
                 
@@ -61,10 +61,10 @@ function Home(){
                 newEL.appendTo($all_msg);
                 newEL.animate({
                 opacity: 1
-                }, 1100);
+                }, 750);
                 $('.E.active').removeClass('active');
                 // $('.home').css('height', '100vh');
-                $('.EletterCards.active').slideUp(1000, function(){
+                $('.EletterCards.active').slideUp(750, function(){
                     $('.EletterCards').removeClass('active');
                 });
         }
@@ -79,14 +79,14 @@ function Home(){
                     opacity: 0
                     });
                     newR.appendTo($r_message);
-                    newR.delay(idx * 20);
+                    newR.delay(idx * 10);
                     newR.animate({
                     opacity: 1
-                    }, 1100);
+                    }, 750);
                 });
                 $('.R').addClass('active');
                 $('.RletterCards').addClass('active');
-                $('.RletterCards.active').slideDown(1000, function(){
+                $('.RletterCards.active').slideDown(750, function(){
                     // $('.home').css('height', '100%');
                 });
             } else{
@@ -98,10 +98,10 @@ function Home(){
                 newR.appendTo($r_message);
                 newR.animate({
                 opacity: 1
-                }, 1100);
+                }, 750);
                     $('.R.active').removeClass('active');
                     // $('.home').css('height', '100vh');
-                    $('.RletterCards.active').slideUp(1000, function(){
+                    $('.RletterCards.active').slideUp(750, function(){
                         $('.RletterCards').removeClass('active');
                     });
             }
@@ -116,14 +116,14 @@ function Home(){
                     opacity: 0
                     });
                     newI.appendTo($i_message);
-                    newI.delay(idx * 20);
+                    newI.delay(idx * 10);
                     newI.animate({
                     opacity: 1
-                    }, 1100);
+                    }, 750);
                 });
                 $('.I').addClass('active');
                 $('.IletterCards').addClass('active');
-                $('.IletterCards.active').slideDown(1000, function(){
+                $('.IletterCards.active').slideDown(750, function(){
                     // $('.home').css('height', '100%');
                 });
             } else{
@@ -135,10 +135,10 @@ function Home(){
                 newR.appendTo($i_message);
                 newR.animate({
                 opacity: 1
-                }, 1100);
+                }, 750);
                     $('.I.active').removeClass('active');
                     // $('.home').css('height', '100vh');
-                    $('.IletterCards.active').slideUp(1000, function(){
+                    $('.IletterCards.active').slideUp(750, function(){
                         $('.IletterCards').removeClass('active');
                     });
             }
@@ -156,11 +156,11 @@ function Home(){
                     newC.delay(idx * 10);
                     newC.animate({
                     opacity: 1
-                    }, 1100);
+                    }, 750);
                 });
                 $('.C').addClass('active');
                 $('.CletterCards').addClass('active');
-                $('.CletterCards.active').slideDown(1000, function(){
+                $('.CletterCards.active').slideDown(750, function(){
                     // $('.home').css('height', '100%');
                 });
             } else{
@@ -173,10 +173,10 @@ function Home(){
                 newC.appendTo($c_message);
                 newC.animate({
                 opacity: 1
-                }, 1100);
+                }, 750);
                     $('.C.active').removeClass('active');
                     // $('.home').css('height', '100vh');
-                    $('.CletterCards.active').slideUp(1000, function(){
+                    $('.CletterCards.active').slideUp(750, function(){
                         $('.CletterCards').removeClass('active');
                     });
             }

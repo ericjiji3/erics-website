@@ -1,4 +1,8 @@
-
+.cards{
+  display: flex;
+  flex-basis: 33.333333%;
+  flex-wrap: wrap;
+}
 .title{
     color: white;
   mix-blend-mode: difference;
@@ -9,6 +13,35 @@
   mix-blend-mode: difference;
   padding: 0 200px;
   font-size: 20px;
+}
+.link{
+  text-decoration: none;
+}
+.jordon{
+  background-image: url("./pics/card-images/jordon.jpeg");
+  background-size: cover;
+  background-position: center;
+
+}
+.las-muchachos{
+  background-image: url("./pics/card-images/las-muchachos.jpg");
+  background-size: cover;
+  background-position: center;
+}
+.jeffrey{
+  background-image: url("./pics/card-images/jeffrey.jfif");
+  background-size: cover;
+  background-position: center;
+}
+.space-raiders{
+  background-image: url("./pics/card-images/space-raiders.PNG");
+  background-size: cover;
+  background-position: center;
+}
+.my-video-game-list{
+  background-image: url("./pics/card-images/my-video-game-list.jpg");
+  background-size: cover;
+  background-position: center;
 }
 .globe{
     animation: 4s App-logo-spin linear infinite;

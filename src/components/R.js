@@ -25,17 +25,17 @@ function Home(){
                     <span className="mail">✉️</span>
                 </div>
                 
-                <h2 className="text">I am a software developer who specializes in making websites for my passionate clients! You can check out some of my work below.</h2>
+                <h2 className="text">Feel free to send me a message about anything and I'll be sure to respond as fast as I can!</h2>
             </div>
             <div className="row justify-content-center text-center">
             <form className="form" ref={form} onSubmit={sendEmail} autocomplete="off">
                 <div className="block">
                     <label className="form-label">Name</label>
-                    <input className="form-input" type="text" autocomplete="off" name="user_name" />
+                    <input className="form-input" type="text" autocomplete="off" name="from_name" />
                 </div>
                 <div className="block">
                     <label className="form-label">Email</label>
-                    <input className="form-input" type="email" autocomplete="off" name="user_email" />
+                    <input className="form-input" type="email" autocomplete="off" name="from_email" />
                 </div>
                 <div>
                     <h2 className="message-label">Message</h2>
