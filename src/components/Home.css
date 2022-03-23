@@ -13,24 +13,26 @@
   margin: 105px 0 0px 0;
   color: white;
   mix-blend-mode: difference;
+  overflow-x: hidden;
   font-size: 60px;
 }
 .home .E:hover, .R:hover, .I:hover, .C:hover{
     cursor: pointer;
     animation: 2s small-big linear infinite;
+    
   }
   @keyframes small-big{
     0%{
       transform: scale(1);
     } 
     25%{
-      transform: scale(1.25);
+      transform: scale(1.15);
     }
     50%{
-      transform: scale(1.5);
+      transform: scale(1.25);
     }
     75%{
-      transform: scale(1.25);
+      transform: scale(1.15);
     }
     100%{
       transform: scale(1);

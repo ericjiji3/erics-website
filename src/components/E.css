@@ -43,6 +43,11 @@
   background-size: cover;
   background-position: center;
 }
+.diary-of-a-wimpy-kid{
+  background-image: url("./pics/card-images/diary-of-a-wimpy-kid.webp");
+  background-size: cover;
+  background-position: center;
+}
 .globe{
     animation: 4s App-logo-spin linear infinite;
 }

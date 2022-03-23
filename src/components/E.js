@@ -118,7 +118,25 @@ function Home(){
                     /> </a>
             }
             </Tooltip>
-
+            <Tooltip content="progress html-90 bootstrap-50 javascript-25 react-75 https://cooperfryar.itch.io/space-raiders" direction="bottom">
+            {window.innerWidth < 850 ? 
+                <Card
+                title='Diary of a Wimpy Kid'
+                imageURL=''
+                body='Blog'
+                className="diary-of-a-wimpy-kid"
+                />
+                :
+                <a className="link" href="https://www.diary-of-a-wimpy-kid.com/" target="_blank">
+                    <Card
+                        title='Diary of a Wimpy Kid'
+                        imageURL=''
+                        body='Blog'
+                        className="diary-of-a-wimpy-kid"
+                    />
+                </a>
+                }
+            </Tooltip>
             </div>
             
         </div>
