@@ -18,35 +18,120 @@
   text-decoration: none;
 }
 .jordon{
+  position: relative;
+}
+.jordon::before{
+  content: '';
+  display: block;
+  position: absolute;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  opacity: 0.75;
   background-image: url("./pics/card-images/jordon.jpeg");
   background-size: cover;
   background-position: center;
-
+  transition: .3s;
+}
+.jordon:hover::before{
+  opacity: 1;
 }
 .las-muchachos{
+  position: relative;
+}
+.las-muchachos::before{
+  content: '';
+  display: block;
+  position: absolute;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  opacity: 0.75;
   background-image: url("./pics/card-images/las-muchachos.jpg");
   background-size: cover;
   background-position: center;
+  transition: .3s;
+}
+.las-muchachos:hover::before{
+  opacity: 1;
 }
 .jeffrey{
+  position: relative;
+}
+.jeffrey::before{
+  content: '';
+  display: block;
+  position: absolute;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  opacity: 0.75;
   background-image: url("./pics/card-images/jeffrey.jfif");
   background-size: cover;
   background-position: center;
 }
+.jeffrey:hover::before{
+  opacity: 1;
+}
 .space-raiders{
+  position: relative;
+}
+.space-raiders::before{
+  content: '';
+  display: block;
+  position: absolute;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  opacity: 0.75;
   background-image: url("./pics/card-images/space-raiders.PNG");
   background-size: cover;
   background-position: center;
 }
+.space-raiders:hover::before{
+  opacity: 1;
+}
 .my-video-game-list{
+  position: relative;
+}
+.my-video-game-list::before{
+  content: '';
+  display: block;
+  position: absolute;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  opacity: 0.75;
   background-image: url("./pics/card-images/my-video-game-list.jpg");
   background-size: cover;
   background-position: center;
 }
+.my-video-game-list:hover::before{
+  opacity: 1;
+}
 .diary-of-a-wimpy-kid{
+  position: relative;
+}
+.diary-of-a-wimpy-kid::before{
+  content: '';
+  display: block;
+  position: absolute;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  opacity: 0.75;
   background-image: url("./pics/card-images/diary-of-a-wimpy-kid.webp");
   background-size: cover;
   background-position: center;
+}
+.diary-of-a-wimpy-kid:hover::before{
+  opacity: 1;
 }
 .globe{
     animation: 4s App-logo-spin linear infinite;

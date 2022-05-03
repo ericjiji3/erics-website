@@ -17,22 +17,61 @@ font-size: 20px;
   animation: 2s tilt-reverse linear infinite
 }
 .github{
+  position: relative;
+}
+.github::before{
+  content: '';
+  display: block;
+  position: absolute;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  opacity: 0.75;
   background-image: url("./pics/card-images/github.png");
   background-size: cover;
   background-position: center;
-
+}
+.github:hover::before{
+  opacity: 1;
 }
 .gitlab{
+  position: relative;
+}
+.gitlab::before{
+  content: '';
+  display: block;
+  position: absolute;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  opacity: 0.75;
   background-image: url("./pics/card-images/gitlab.png");
   background-size: cover;
   background-position: center;
-
+}
+.gitlab:hover::before{
+  opacity: 1;
 }
 .itch{
+  position: relative;
+}
+.itch::before{
+  content: '';
+  display: block;
+  position: absolute;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  opacity: 0.75;
   background-image: url("./pics/card-images/itch.png");
   background-size: cover;
   background-position: center;
-
+}
+.itch:hover::before{
+  opacity: 1;
 }
 @keyframes tilt{
   0%{
