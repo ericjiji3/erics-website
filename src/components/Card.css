@@ -4,7 +4,7 @@
     height: 175px;
     overflow: hidden;
     box-shadow: 0px 0px 15px -5px;
-    transition: 0.3s;
+    transition: 0.3s ease-in-out;
     animation: ease-in;
     border-radius: 15%;
 }
@@ -31,14 +31,14 @@
 .title-container h3{
     font-size: 20px;
     margin-bottom: 0;
-    transition: 0.3s;
+    transition: 0.3s ease-in-out;
 }
 .card-container:hover .title-container h3{
     font-size: 25px;
 }
 .title-container p{
     font-size: 15px;
-    transition: 0.3s;
+    transition: 0.3s ease-in-out;
 }
 .card-container:hover .title-container p{
     font-size: 20px;
@@ -70,12 +70,12 @@
         margin-bottom: 0;
     }
     .card-container:hover .title-container h3{
-        font-size: 20px;
+        font-size: 17px;
     }
     .title-container p{
         font-size: 10px;
     }
     .card-container:hover .title-container p{
-        font-size: 15px;
+        font-size: 12px;
     }
 }

@@ -1,9 +1,13 @@
-import React, { useState } from "react";
+import React, { useRef, useEffect, useState } from "react";
 import "./Tooltip.css";
 import ToolTipContent from "./TooltipContent";
+import ClickAwayListener from 'react-click-away-listener';
+
+
 const Tooltip = (props) => {
   let timeout;
   const [active, setActive] = useState(false);
+  
 
   const showTip = () => {
       setActive(true);
@@ -13,7 +17,8 @@ const Tooltip = (props) => {
     setActive(false);
   };
 
-  const toggleTip = () => {
+  const toggleTip = (e) => {
+    console.log(e.clientX);
     if(!active){
       setActive(true);
     }else{

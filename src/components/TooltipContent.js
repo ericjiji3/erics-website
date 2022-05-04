@@ -9,7 +9,7 @@ function TooltipContent(props){
       ref = skills.pop();
     }
     skills.shift();
-    console.log(skills);
+
     function getWidth(width){
         let barWidth = width + "%";
         return barWidth;

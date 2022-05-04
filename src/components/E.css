@@ -32,7 +32,7 @@
   background-image: url("./pics/card-images/jordon.jpeg");
   background-size: cover;
   background-position: center;
-  transition: .3s;
+  transition: .3s ease-in-out;
 }
 .jordon:hover::before{
   opacity: 1;
@@ -52,7 +52,7 @@
   background-image: url("./pics/card-images/las-muchachos.jpg");
   background-size: cover;
   background-position: center;
-  transition: .3s;
+  transition: .3s ease-in-out;
 }
 .las-muchachos:hover::before{
   opacity: 1;
@@ -72,6 +72,7 @@
   background-image: url("./pics/card-images/jeffrey.jfif");
   background-size: cover;
   background-position: center;
+  transition: .3s ease-in-out;
 }
 .jeffrey:hover::before{
   opacity: 1;
@@ -91,6 +92,7 @@
   background-image: url("./pics/card-images/space-raiders.PNG");
   background-size: cover;
   background-position: center;
+  transition: .3s ease-in-out;
 }
 .space-raiders:hover::before{
   opacity: 1;
@@ -110,6 +112,7 @@
   background-image: url("./pics/card-images/my-video-game-list.jpg");
   background-size: cover;
   background-position: center;
+  transition: .3s ease-in-out;
 }
 .my-video-game-list:hover::before{
   opacity: 1;
@@ -129,6 +132,7 @@
   background-image: url("./pics/card-images/diary-of-a-wimpy-kid.webp");
   background-size: cover;
   background-position: center;
+  transition: .3s ease-in-out;
 }
 .diary-of-a-wimpy-kid:hover::before{
   opacity: 1;
