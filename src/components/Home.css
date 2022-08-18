@@ -2,9 +2,10 @@
     display: flex;
     flex-flow: column;
     /* height: 100%; */
-    background-color:#14C2CC;
+    background-color:#cc0d0d;
+    /* background-color: #777777; */
 		background-image: 
-		radial-gradient(circle farthest-side at top right, transparent, #0D64FF), radial-gradient(ellipse farthest-corner at 0% 100%, transparent, #FF00A0);
+		radial-gradient(circle farthest-side at top right, transparent, #000000), radial-gradient(ellipse farthest-corner at 0% 100%, transparent, #ffffff);
 		animation:bg-change 10s infinite;
 }
 .home .E, .R, .I, .C{
