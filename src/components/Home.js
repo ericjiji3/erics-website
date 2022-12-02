@@ -25,7 +25,8 @@ function Home(){
         var $r_message;
         var $i_message;
         var $c_message;
-
+        var newR;
+        
         if(letter === "E"){
             e = !e;
             console.log(e)
@@ -79,7 +80,7 @@ function Home(){
                 $r_message = $('.R');
                 $r_message.text("");
                 $.each(rArray, function(idx, elem) {
-                    var newR = $("<span/>").text(elem).css({
+                    newR = $("<span/>").text(elem).css({
                     opacity: 0
                     });
                     newR.appendTo($r_message);
@@ -96,7 +97,7 @@ function Home(){
             } else{
                 $r_message = $('.R');
                 $r_message.text("");
-                var newR = $("<span/>").text('R').css({
+                newR = $("<span/>").text('R').css({
                 opacity: 0
                 });
                 newR.appendTo($r_message);
