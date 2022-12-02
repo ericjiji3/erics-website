@@ -134,7 +134,7 @@ function Home(){
             } else{
                 $i_message = $('.I');
                 $i_message.text("");
-                var newR = $("<span/>").text('I').css({
+                newR = $("<span/>").text('I').css({
                 opacity: 0
                 });
                 newR.appendTo($i_message);
