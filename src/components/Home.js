@@ -1,12 +1,10 @@
-import React, {useEffect, useState} from 'react';
+import React from 'react';
 import './Home.css';
-import Card from './Card.js';
 import E from './E.js';
 import R from './R.js';
 import I from './I.js';
 import C from './C.js';
 import $ from 'jquery';
-import { CSSTransition, SwitchTransition } from "react-transition-group";
 
 function Home(){
     var e = false;
@@ -23,12 +21,17 @@ function Home(){
     const cArray = ['C','O','O','L'];
 
     function handleClick(letter){
-        if(letter == "E"){
+        var $all_msg;
+        var $r_message;
+        var $i_message;
+        var $c_message;
+
+        if(letter === "E"){
             e = !e;
             console.log(e)
             if(e){
                 //get the welcome msg element
-                var $all_msg = $('.E');
+                $all_msg = $('.E');
                 //get a list of letters from the welcome text
                 //clear the welcome text msg
                 $all_msg.text("");
@@ -54,7 +57,7 @@ function Home(){
                 });
                 
         } else{
-                var $all_msg = $('.E');
+                $all_msg = $('.E');
                 $all_msg.text("");
                 var newEL = $("<span/>").text('E').css({
                 opacity: 0
@@ -70,10 +73,10 @@ function Home(){
                 });
         }
         }
-        if(letter == "R"){
+        if(letter === "R"){
             r = !r;
             if(r){
-                var $r_message = $('.R');
+                $r_message = $('.R');
                 $r_message.text("");
                 $.each(rArray, function(idx, elem) {
                     var newR = $("<span/>").text(elem).css({
@@ -91,7 +94,7 @@ function Home(){
                     // $('.home').css('height', '100%');
                 });
             } else{
-                var $r_message = $('.R');
+                $r_message = $('.R');
                 $r_message.text("");
                 var newR = $("<span/>").text('R').css({
                 opacity: 0
@@ -107,10 +110,10 @@ function Home(){
                     });
             }
         }
-        if(letter == "I"){
+        if(letter === "I"){
             i = !i;
             if(i){
-                var $i_message = $('.I');
+                $i_message = $('.I');
                 $i_message.text("");
                 $.each(iArray, function(idx, elem) {
                     var newI = $("<span/>").text(elem).css({
@@ -128,7 +131,7 @@ function Home(){
                     // $('.home').css('height', '100%');
                 });
             } else{
-                var $i_message = $('.I');
+                $i_message = $('.I');
                 $i_message.text("");
                 var newR = $("<span/>").text('I').css({
                 opacity: 0
@@ -144,10 +147,10 @@ function Home(){
                     });
             }
         }
-        if(letter == "C"){
+        if(letter === "C"){
             c = !c;
             if(c){
-                var $c_message = $('.C');
+                $c_message = $('.C');
                 $c_message.text("");
                 $.each(cArray, function(idx, elem) {
                     var newC = $("<span/>").text(elem).css({
@@ -165,8 +168,8 @@ function Home(){
                     // $('.home').css('height', '100%');
                 });
             } else{
-                var $c_message = $('.C');
-                var $wordList = $c_message.text().split("");
+                $c_message = $('.C');
+
                 $c_message.text("");
                 var newC = $("<span/>").text('C').css({
                 opacity: 0
