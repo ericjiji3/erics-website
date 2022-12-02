@@ -36,7 +36,7 @@ function Home(){
                         </a>
                 }
             </Tooltip>
-            <Tooltip content="progress wordpress-60 html-30 php-20 css-50 javascript-10 https://southcloudramen.com/" direction="bottom">
+            <Tooltip content="progress wp-60 html-30 php-20 css-50 javascript-10 https://southcloudramen.com/" direction="bottom">
             {window.innerWidth < 850 ? 
                 <Card
                 title='SouthCloud Ramen'
@@ -55,7 +55,7 @@ function Home(){
                 </a>
                 }
             </Tooltip>
-            <Tooltip content="progress next-70 html-30 javascript-30 scss-30 https://mahone.netlify.app/" direction="bottom">
+            <Tooltip content="progress react-70 html-30 javascript-30 sass-30 https://mahone.netlify.app/" direction="bottom">
             {window.innerWidth < 850 ? 
             <Card
             title='Austin Mahone'
@@ -74,7 +74,7 @@ function Home(){
             </a>
             }
                </Tooltip> 
-               <Tooltip content="progress threejs-70 react-70 blender-40 https://trippy-triangle.netlify.app/" direction="bottom">
+               <Tooltip content="progress three-70 react-70 blender-40 https://trippy-triangle.netlify.app/" direction="bottom">
             {window.innerWidth < 850 ? 
             <Card
             title='Trippy Triangle'
