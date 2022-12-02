@@ -37,26 +37,6 @@
 .jordon:hover::before{
   opacity: 1;
 }
-.las-muchachos{
-  position: relative;
-}
-.las-muchachos::before{
-  content: '';
-  display: block;
-  position: absolute;
-  left: 0;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  opacity: 0.75;
-  background-image: url("./pics/card-images/las-muchachos.jpg");
-  background-size: cover;
-  background-position: center;
-  transition: .3s ease-in-out;
-}
-.las-muchachos:hover::before{
-  opacity: 1;
-}
 .jeffrey{
   position: relative;
 }
@@ -75,6 +55,26 @@
   transition: .3s ease-in-out;
 }
 .jeffrey:hover::before{
+  opacity: 1;
+}
+.southcloud{
+  position: relative;
+}
+.southcloud::before{
+  content: '';
+  display: block;
+  position: absolute;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  opacity: 0.75;
+  background-image: url("./pics/card-images/southcloud.png");
+  background-size: cover;
+  background-position: center;
+  transition: .3s ease-in-out;
+}
+.southcloud:hover::before{
   opacity: 1;
 }
 .space-raiders{
@@ -97,10 +97,10 @@
 .space-raiders:hover::before{
   opacity: 1;
 }
-.my-video-game-list{
+.mahone{
   position: relative;
 }
-.my-video-game-list::before{
+.mahone::before{
   content: '';
   display: block;
   position: absolute;
@@ -109,12 +109,32 @@
   right: 0;
   bottom: 0;
   opacity: 0.75;
-  background-image: url("./pics/card-images/my-video-game-list.jpg");
+  background-image: url("./pics/card-images/austin.jpg");
   background-size: cover;
   background-position: center;
   transition: .3s ease-in-out;
 }
-.my-video-game-list:hover::before{
+.mahone:hover::before{
+  opacity: 1;
+}
+.triangle{
+  position: relative;
+}
+.triangle::before{
+  content: '';
+  display: block;
+  position: absolute;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  opacity: 0.75;
+  background-image: url("./pics/card-images/tri.png");
+  background-size: cover;
+  background-position: center;
+  transition: .3s ease-in-out;
+}
+.triangle:hover::before{
   opacity: 1;
 }
 .diary-of-a-wimpy-kid{

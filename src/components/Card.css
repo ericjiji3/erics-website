@@ -26,22 +26,23 @@
 }
 .card-container:hover .title-container{
     color: white;
-    -webkit-text-stroke: .5px #ED9810;
+    /* -webkit-text-stroke: .5px #ED9810; */
 }
 .title-container h3{
-    font-size: 20px;
+    font-size: 25px;
     margin-bottom: 0;
     transition: 0.3s ease-in-out;
 }
 .card-container:hover .title-container h3{
-    font-size: 25px;
+    font-size: 30px;
 }
 .title-container p{
-    font-size: 15px;
+    font-size: 20px;
     transition: 0.3s ease-in-out;
 }
 .card-container:hover .title-container p{
-    font-size: 20px;
+    font-size: 25px;
+
 }
 .image-container{
     overflow: hidden;

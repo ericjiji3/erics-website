@@ -1,6 +1,6 @@
 .App {
   text-align: center;
-  
+  overflow-x: hidden;
 }
 html, body, .App, .App>div {
   height: 100%;

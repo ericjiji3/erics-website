@@ -5,7 +5,7 @@
     background-color:#cc0d0d;
     /* background-color: #777777; */
 		background-image: 
-		radial-gradient(circle farthest-side at top right, transparent, #000000), radial-gradient(ellipse farthest-corner at 0% 100%, transparent, #ffffff);
+		radial-gradient(circle farthest-side at top right, transparent, #000000), radial-gradient(ellipse farthest-corner at 0% 100%, transparent, #7e7e7e);
 		animation:bg-change 10s infinite;
 }
 .home .E, .R, .I, .C{
@@ -57,7 +57,7 @@
 .name-container{
     /* height: 100%; */
     width: 100%;
-    font-family: 'Syne', sans-serif;
+    font-family: 'Kenia', cursive;
     font-size: 3em;
     /*background-color: #d6834f;*/
     padding: 80px 0;

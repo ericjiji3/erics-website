@@ -45,6 +45,63 @@ function Home(){
                         </a>
                 }
             </Tooltip>
+            <Tooltip content="progress wordpress-60 html-30 php-20 css-50 javascript-10 https://southcloudramen.com/" direction="bottom">
+            {window.innerWidth < 850 ? 
+                <Card
+                title='SouthCloud Ramen'
+                imageURL=''
+                body='Restaurant'
+                className="southcloud"
+                />
+                :
+                <a className="link" href="https://southcloudramen.com/" target="_blank">
+                    <Card
+                        title='SouthCloud Ramen'
+                        imageURL=''
+                        body='Restaurant'
+                        className="southcloud"
+                    />
+                </a>
+                }
+            </Tooltip>
+            <Tooltip content="progress next-70 html-30 javascript-30 scss-30 https://mahone.netlify.app/" direction="bottom">
+            {window.innerWidth < 850 ? 
+            <Card
+            title='Austin Mahone'
+            imageURL=''
+            body='Singer'
+            className="mahone"
+            />
+            :
+            <a className="link" href="https://mahone.netlify.app/" target="_blank">
+            <Card
+                    title='Austin Mahone'
+                    imageURL=''
+                    body='Singer'
+                    className="mahone"
+                />
+            </a>
+            }
+               </Tooltip> 
+               <Tooltip content="progress threejs-70 react-70 blender-40 https://trippy-triangle.netlify.app/" direction="bottom">
+            {window.innerWidth < 850 ? 
+            <Card
+            title='Trippy Triangle'
+            imageURL=''
+            body='Art'
+            className="triangle"
+            />
+            :
+            <a className="link" href="https://trippy-triangle.netlify.app/" target="_blank">
+            <Card
+                    title='Trippy Triangle'
+                    imageURL=''
+                    body='Art'
+                    className="triangle"
+                />
+            </a>
+            }
+               </Tooltip> 
             <Tooltip content="progress html-30 phaser-90 javascript-90 https://cooperfryar.itch.io/space-raiders" direction="bottom">
             {window.innerWidth < 850 ? 
                 <Card
@@ -83,42 +140,7 @@ function Home(){
             </a>
             }
                </Tooltip> 
-                    <Tooltip content="progress html-90 css-75 javascript-90 php-75 mysql-50 https://gitlab.com/ej6638/myvideogamelist" direction="bottom">
-                    {window.innerWidth < 850 ? 
-                    <Card
-                    title='My Video Game List'
-                    imageURL=''
-                    body='Database'
-                    className="my-video-game-list"
-                />:
-                    <a className="link" href="https://gitlab.com/ej6638/myvideogamelist" target="_blank">
-                    <Card
-                        title='My Video Game List'
-                        imageURL=''
-                        body='Database'
-                        className="my-video-game-list"
-                    />
-                    </a>
-                }
-                    </Tooltip>
-            <Tooltip content="progress html-90 bootstrap-90 javascript-75 react-50 https://las-muchachos.herokuapp.com/" direction="bottom">
-            {window.innerWidth < 850 ? 
-            <Card
-            title='Las Muchachos'
-            imageURL=''
-            body='Production Company'
-            className="las-muchachos"
-        /> :
-            <a className="link" href="https://las-muchachos.herokuapp.com/" target="_blank">
-                    <Card
-                        title='Las Muchachos'
-                        imageURL=''
-                        body='Production Company'
-                        className="las-muchachos"
-                    /> </a>
-            }
-            </Tooltip>
-            <Tooltip content="progress html-90 bootstrap-50 javascript-25 react-75 https://cooperfryar.itch.io/space-raiders" direction="bottom">
+            <Tooltip content="progress html-90 bootstrap-50 javascript-25 react-75 https://www.diary-of-a-wimpy-kid.com/" direction="bottom">
             {window.innerWidth < 850 ? 
                 <Card
                 title='Diary of a Wimpy Kid'
