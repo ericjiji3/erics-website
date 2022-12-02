@@ -1,11 +1,9 @@
-import React, { useState } from "react";
+import React from "react";
 import "./Tooltip.css";
-import E from "./E";
-import html from "./pics/logos/html.png";
 function TooltipContent(props){
     let ref;
     let skills = props.content.split(' ');
-    if(skills[skills.length - 1].substr(0,5) == "https"){
+    if(skills[skills.length - 1].substr(0,5) === "https"){
       ref = skills.pop();
     }
     skills.shift();
@@ -26,7 +24,7 @@ function TooltipContent(props){
           </div>
         </div>
         ))}
-        {ref && window.innerWidth < 850 ? <a className="mobile-link btn btn-primary" href={ref} target="_blank">VIEW</a> : null}
+        {ref && window.innerWidth < 850 ? <a className="mobile-link btn btn-primary" href={ref} target="_blank" rel="noreferrer">VIEW</a> : null}
     </div>
   )
   };

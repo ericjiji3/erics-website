@@ -1,7 +1,6 @@
-import React, {useState} from 'react';
+import React from 'react';
 import './I.css';
 import Card from './Card.js';
-import $ from 'jquery';
 
 function Home(){
 
@@ -17,7 +16,7 @@ function Home(){
                 <h2 className="text">I am constantly exploring new innovations in technology and software development. Check out some of my small creative projects!</h2>
             </div>
         <div className="cards justify-content-center">
-            <a className="link" href="https://github.com/ericjiji3" target="_blank">
+            <a className="link" href="https://github.com/ericjiji3" target="_blank" rel="noreferrer">
             <Card
                     title='GitHub'
                     imageURL=''
@@ -25,7 +24,7 @@ function Home(){
                     className="github"
                 />
                 </a>
-                <a className="link" href="https://gitlab.com/ej6638" target="_blank">
+                <a className="link" href="https://gitlab.com/ej6638" target="_blank" rel="noreferrer">
                 <Card
                     title='GitLab'
                     imageURL=''
@@ -33,7 +32,7 @@ function Home(){
                     className="gitlab"
                 />
                 </a>
-                <a className="link" href="https://ej6638.itch.io/" target="_blank">
+                <a className="link" href="https://ej6638.itch.io/" target="_blank" rel="noreferrer">
                 <Card
                     title='itch IO'
                     imageURL=''

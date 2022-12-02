@@ -1,11 +1,8 @@
-import React, { useRef, useEffect, useState } from "react";
+import React, {useState } from "react";
 import "./Tooltip.css";
 import ToolTipContent from "./TooltipContent";
-import ClickAwayListener from 'react-click-away-listener';
-
 
 const Tooltip = (props) => {
-  let timeout;
   const [active, setActive] = useState(false);
   
 

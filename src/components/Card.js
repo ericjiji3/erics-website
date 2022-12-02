@@ -1,6 +1,5 @@
-import React, {useState} from 'react';
-import './Card.css'
-import { usePopper } from 'react-popper';
+import React from 'react';
+import './Card.css';
 
 function Card({title, imageURL, body, className}){
     

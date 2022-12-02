@@ -1,18 +1,9 @@
-import React, {useState} from 'react';
+import React from 'react';
 import './E.css';
 import Card from './Card.js';
-import $ from 'jquery';
-import { EmojiProvider, Emoji } from 'react-apple-emojis';
-import emojiData from 'react-apple-emojis/lib/data.json';
-import { usePopper } from 'react-popper';
 import Tooltip from "./Tooltip";
 function Home(){
-    const [referenceElement, setReferenceElement] = useState(null);
-  const [popperElement, setPopperElement] = useState(null);
-  const [arrowElement, setArrowElement] = useState(null);
-  const { styles, attributes } = usePopper(referenceElement, popperElement, {
-    modifiers: [{ name: 'arrow', options: { element: arrowElement } }],
-  });
+
     return(
         <div>
             <div className="row">
@@ -35,7 +26,7 @@ function Home(){
                         />
                     
                     : 
-                    <a className="link" href="https://www.jordon-inrwav.com/" target="_blank">
+                    <a className="link" href="https://www.jordon-inrwav.com/" target="_blank" rel="noreferrer">
                     <Card
                             title='Jordon'
                             imageURL=''
@@ -54,7 +45,7 @@ function Home(){
                 className="southcloud"
                 />
                 :
-                <a className="link" href="https://southcloudramen.com/" target="_blank">
+                <a className="link" href="https://southcloudramen.com/" target="_blank" rel="noreferrer">
                     <Card
                         title='SouthCloud Ramen'
                         imageURL=''
@@ -73,7 +64,7 @@ function Home(){
             className="mahone"
             />
             :
-            <a className="link" href="https://mahone.netlify.app/" target="_blank">
+            <a className="link" href="https://mahone.netlify.app/" target="_blank" rel="noreferrer">
             <Card
                     title='Austin Mahone'
                     imageURL=''
@@ -92,7 +83,7 @@ function Home(){
             className="triangle"
             />
             :
-            <a className="link" href="https://trippy-triangle.netlify.app/" target="_blank">
+            <a className="link" href="https://trippy-triangle.netlify.app/" target="_blank" rel="noreferrer">
             <Card
                     title='Trippy Triangle'
                     imageURL=''
@@ -111,7 +102,7 @@ function Home(){
                 className="space-raiders"
                 />
                 :
-                <a className="link" href="https://cooperfryar.itch.io/space-raiders" target="_blank">
+                <a className="link" href="https://cooperfryar.itch.io/space-raiders" target="_blank" rel="noreferrer">
                     <Card
                         title='Space Raiders'
                         imageURL=''
@@ -130,7 +121,7 @@ function Home(){
             className="jeffrey"
             />
             :
-            <a className="link" href="https://jeffrey-macas-website.herokuapp.com/" target="_blank">
+            <a className="link" href="https://jeffrey-macas-website.herokuapp.com/" target="_blank" rel="noreferrer">
             <Card
                     title='Jeffrey'
                     imageURL=''
@@ -149,7 +140,7 @@ function Home(){
                 className="diary-of-a-wimpy-kid"
                 />
                 :
-                <a className="link" href="https://www.diary-of-a-wimpy-kid.com/" target="_blank">
+                <a className="link" href="https://www.diary-of-a-wimpy-kid.com/" target="_blank" rel="noreferrer">
                     <Card
                         title='Diary of a Wimpy Kid'
                         imageURL=''

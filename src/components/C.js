@@ -1,11 +1,7 @@
-import React, {useState} from 'react';
+import React from 'react';
 import './C.css';
-import Card from './Card.js';
-import $ from 'jquery';
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
-    faYoutube,
-    faFacebookF,
     faTwitter,
     faInstagram,
     faSpotify,
@@ -26,19 +22,19 @@ function Home(){
                 <h2 className="text">If you are curious what I'm up to outside of work, look no further!</h2>
             </div>
             <div className="cards row justify-content-center">
-                    <a href = "https://twitter.com/dj_ji3" className = "twitter px-3 col-1" target="_blank">
+                    <a href = "https://twitter.com/dj_ji3" className = "twitter px-3 col-1" target="_blank" rel="noreferrer">
                 <FontAwesomeIcon icon={faTwitter} size="2x" />
             </a>
-            <a href = "https://www.instagram.com/dj_ji/" className = "instagram px-3 col-1" target="_blank">
+            <a href = "https://www.instagram.com/dj_ji/" className = "instagram px-3 col-1" target="_blank" rel="noreferrer">
                 <FontAwesomeIcon icon={faInstagram} size="2x" />
             </a>
-            <a href = "https://www.linkedin.com/in/eric-ji-b96775192/" className = "linkedin px-3 col-1" target="_blank">
+            <a href = "https://www.linkedin.com/in/eric-ji-b96775192/" className = "linkedin px-3 col-1" target="_blank" rel="noreferrer">
                 <FontAwesomeIcon icon={faLinkedin} size="2x" />
             </a>
-            <a href = "https://open.spotify.com/user/qbm4hmd1ob4xw6rwf7bs09vso" className = "spotify px-3 col-1" target="_blank">
+            <a href = "https://open.spotify.com/user/qbm4hmd1ob4xw6rwf7bs09vso" className = "spotify px-3 col-1" target="_blank" rel="noreferrer">
                 <FontAwesomeIcon icon={faSpotify} size="2x" />
             </a>
-            <a href = "https://www.twitch.tv/dj_ji3" className = "twitch px-3 col-1" target="_blank">
+            <a href = "https://www.twitch.tv/dj_ji3" className = "twitch px-3 col-1" target="_blank" rel="noreferrer">
                 <FontAwesomeIcon icon={faTwitch} size="2x" />
             </a>
             </div>

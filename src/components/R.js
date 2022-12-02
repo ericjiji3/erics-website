@@ -1,6 +1,5 @@
-import React, {useState, useRef} from 'react';
+import React, {useRef} from 'react';
 import './R.css';
-import Card from './Card.js';
 import $ from 'jquery';
 import emailjs from 'emailjs-com';
 function Home(){
@@ -8,24 +7,24 @@ function Home(){
     function validateFields(data){
         var validate = true;
         $.each(data, function(i, field){
-            if(field.name == 'from_email'){
+            if(field.name === 'from_email'){
                 var email = field.value;
                 email.toLowerCase();
                 if(!email.match(/^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/) || !email){
                     validate = false;
                 }
             }
-            if(field.name == 'from_name'){
+            if(field.name === 'from_name'){
                 if(!field.value){
                     validate = false;
                 }
             }
-            if(field.name == 'from_subject'){
+            if(field.name === 'from_subject'){
                 if(!field.value){
                     validate = false;
                 }
             }
-            if(field.name == 'message'){
+            if(field.name === 'message'){
                 if(!field.value){
                     validate = false;
                 }
